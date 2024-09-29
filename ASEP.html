@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0022ff;
+  padding-top: 1px;
+  padding-bottom: 100px;
+  height: 70px;
+  font-size: ;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 550px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 550px; /* only for demonstration, should be removed */
+}
+
+kanan {
+    float: right;
+    width: 30%;
+    height: 550px; /* only for demonstration, should be removed */
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0022ff;
+  padding: 10px;
+ 
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>PEMROGRAMAN WEB DASAR</h2>
+  <p>Topik HTML, PHP,</p>
+</header>
+
+<section>
+  <nav>
+    <table border="1" width="100%">
+      <tr>
+          <th bgcolor="blue"><a href="tpwebpro.html">Menu</a></th>
+      </tr>
+      <tr>
+          <th bgcolor="yellow"><a href="ASEP.html">Zefa</a></th>
+      </tr>
+      <tr>
+          <th bgcolor="yellow"><a href="Ramengpiton.html">Rama</a></th>
+      </tr>
+      <tr>
+          <th bgcolor="yellow" ><a href="Raka.html">Raka</a></th>
+      </tr>
+      <tr>
+          <th bgcolor="yellow"><a href="JuliusC++.html">Julius</a></th>
+      </tr>
+  </table>
+    
+  </nav>
+  <kanan> 
+    <img src="TU.png" alt="Telkom logo" width="100" class="center"> 
+    <h4>link1</h4>
+    <h4>link2</h4>
+    <h4>link3</h4>
+</kanan>
+  <article>
+    <h1><i>Aku Zefa</i> </h1>
+   <table> 
+    <tr>
+      <th>Nama lengkap:</th>
+      <th>Matthew Zefanya Limbong</th>
+    </tr>
+    <tr> 
+      <th>NIM:</th>
+      <th>1303220184</TH>
+    </tr>
+    <tr>
+      <th>Kelas:</th>
+      <th>IT-46-04</th>
+    </tr>
+   </table>
+    <img src="zf.jpg" alt="Zefa ganteng" height="400px" width="400px" class="center">
+    </article>
+    
+
+</section>
+
+
+<footer>
+  <p>Dikembangkan oleh: lihat menu</p>
+  <p>@3005</p>
+</footer>
+
+</body>
+</html>
